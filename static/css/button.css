@@ -1,0 +1,142 @@
+/* Centering of the page */
+/* line 4, ../scss/button.scss */
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 10, ../scss/button.scss */
+body .content #featureButton {
+  margin: 5% 0%;
+}
+/* line 12, ../scss/button.scss */
+body .content #featureButton button {
+  position: relative;
+  font-size: 1em;
+  padding: 1% 20%;
+  left: 30%;
+  background-color: cadetblue;
+  -webkit-box-shadow: 0px 5px 0px 0px #323232;
+  -moz-box-shadow: 0px 5px 0px 0px #323232;
+  box-shadow: 0px 5px 0px 0px #323232;
+}
+/* line 22, ../scss/button.scss */
+body .content #featureButton button:hover {
+  top: -1px;
+  -webkit-box-shadow: 0px 6px 0px 0px #323232;
+  -moz-box-shadow: 0px 6px 0px 0px #323232;
+  box-shadow: 0px 6px 0px 0px #323232;
+}
+/* line 28, ../scss/button.scss */
+body .content #featureButton button:active {
+  top: 4px;
+  -webkit-box-shadow: 0px 2px 0px 0px #323232;
+  -moz-box-shadow: 0px 2px 0px 0px #323232;
+  box-shadow: 0px 2px 0px 0px #323232;
+}
+/* line 34, ../scss/button.scss */
+body .content #featureButton button:focus {
+  outline: 0;
+}
+/* line 37, ../scss/button.scss */
+body .content .button_grid {
+  position: relative;
+}
+/* line 39, ../scss/button.scss */
+body .content .button_grid .block {
+  padding: 1em 0em;
+}
+/* line 41, ../scss/button.scss */
+body .content .button_grid .block button {
+  position: relative;
+  left: 30%;
+  padding: 10% 10%;
+}
+
+/*Grid Layout for different divices*/
+@media (min-width: 480px) {
+  /* line 54, ../scss/button.scss */
+  body {
+    width: 480px;
+  }
+
+  /* line 55, ../scss/button.scss */
+  .m_width50 {
+    width: 50%;
+  }
+}
+/* Desktop version:
+   we set the body width to 768px. */
+@media (min-width: 768px) {
+  /* line 61, ../scss/button.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 62, ../scss/button.scss */
+  .t_width100 {
+    width: 100%;
+  }
+
+  /* line 63, ../scss/button.scss */
+  .t_width50 {
+    width: 50%;
+  }
+
+  /* line 64, ../scss/button.scss */
+  .t_width75 {
+    width: 75%;
+  }
+
+  /* line 65, ../scss/button.scss */
+  .t_width66 {
+    width: 66%;
+  }
+
+  /* line 66, ../scss/button.scss */
+  .t_width25 {
+    width: 25%;
+  }
+
+  /* line 67, ../scss/button.scss */
+  .t_width33 {
+    width: 33%;
+  }
+}
+/* Large Desktop version:
+   we set the body width to 1024px. */
+@media (min-width: 1024px) {
+  /* line 72, ../scss/button.scss */
+  body {
+    width: 1024px;
+  }
+
+  /* line 73, ../scss/button.scss */
+  .width100 {
+    width: 100%;
+  }
+
+  /* line 74, ../scss/button.scss */
+  .width50 {
+    width: 50%;
+  }
+
+  /* line 75, ../scss/button.scss */
+  .width75 {
+    width: 75%;
+  }
+
+  /* line 76, ../scss/button.scss */
+  .width66 {
+    width: 66%;
+  }
+
+  /* line 77, ../scss/button.scss */
+  .width25 {
+    width: 25%;
+  }
+
+  /* line 78, ../scss/button.scss */
+  .width33 {
+    width: 33%;
+  }
+}

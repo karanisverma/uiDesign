@@ -1,0 +1,80 @@
+
+
+      /* Centering of the page */
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  
+  .content{ 
+
+    #featureButton {
+      margin: 5% 0%;
+      button{
+        position: relative;
+        font-size: 1em;
+        padding: 1% 20%;
+        left: 30%;
+        background-color: cadetblue;
+        -webkit-box-shadow: 0px 5px 0px 0px rgba(50, 50, 50, 1);
+        -moz-box-shadow:    0px 5px 0px 0px rgba(50, 50, 50, 1);
+        box-shadow:         0px 5px 0px 0px rgba(50, 50, 50, 1);
+      }
+      button:hover{
+        top:-1px;
+        -webkit-box-shadow: 0px 6px 0px 0px rgba(50, 50, 50, 1);
+        -moz-box-shadow:    0px 6px 0px 0px rgba(50, 50, 50, 1);
+        box-shadow:         0px 6px 0px 0px rgba(50, 50, 50, 1);
+      }
+      button:active{
+        top:4px;
+        -webkit-box-shadow: 0px 2px 0px 0px rgba(50, 50, 50, 1);
+        -moz-box-shadow:    0px 2px 0px 0px rgba(50, 50, 50, 1);
+        box-shadow:         0px 2px 0px 0px rgba(50, 50, 50, 1);
+      }
+      button:focus {outline:0;}
+    }
+
+    .button_grid{
+      position: relative;
+        .block{
+          padding: 1em 0em;
+          button{
+            position: relative;
+            left:30%;
+            padding:10% 10%;
+          }
+        }
+      }
+   
+   }
+  }
+  
+/*Grid Layout for different divices*/
+  @media (min-width: 480px) {
+    body { width: 480px; }
+    .m_width50{ width: 50%; }
+
+  }
+  /* Desktop version:
+     we set the body width to 768px. */
+  @media (min-width: 768px) {
+      body { width: 768px; }
+      .t_width100{ width: 100%; }
+      .t_width50{ width: 50%; }
+      .t_width75{ width: 75%; }
+      .t_width66{ width: 66%; }
+      .t_width25{ width: 25%; }
+      .t_width33{ width: 33%; }
+    }
+  /* Large Desktop version:
+     we set the body width to 1024px. */
+  @media (min-width: 1024px) {
+    body { width: 1024px; }
+      .width100{ width: 100%; }
+      .width50{ width: 50%; }
+      .width75{ width: 75%; }
+      .width66{ width: 66%; }
+      .width25{ width: 25%; }
+      .width33{ width: 33%; }
+  		}
+
