@@ -252,19 +252,19 @@ html body .content .button_grid #button4 {
     width: 80px;
     margin-left: 0px;
     opacity: 1;
-    box-shadow: 90px 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 90px 0 5px rgba(0, 0, 0, 0.7);
   }
   50% {
     width: 50px;
     margin-left: 20px;
     opacity: 0.3;
-    box-shadow: 90px 0 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 90px 0 15px rgba(0, 0, 0, 0.3);
   }
   100% {
     width: 80px;
     margin-left: 0px;
     opacity: 1;
-    box-shadow: 90px 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 90px 0 5px rgba(0, 0, 0, 0.7);
   }
 }
 /* line 213, ../scss/button.scss */
