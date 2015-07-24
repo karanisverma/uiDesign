@@ -204,7 +204,7 @@ html body .content .button_grid #button4 {
     box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
   }
   50% {
-    top: -6px;
+    top: -10px;
     -webkit-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.75);
@@ -221,13 +221,53 @@ html body .content .button_grid #button4 {
     top: 0px;
   }
   50% {
-    top: -6px;
+    top: -10px;
   }
   100% {
     top: 0px;
   }
 }
-/* line 209, ../scss/button.scss */
+@-moz-keyframes shadowSize {
+  0% {
+    width: 200px;
+    margin-left: 0px;
+    opacity: 1;
+    box-shadow: 100px 0 10px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    width: 150px;
+    margin-left: 25px;
+    opacity: 0.3;
+    box-shadow: 100px 0 30px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    width: 200px;
+    margin-left: 0px;
+    opacity: 1;
+    box-shadow: 100px 0 10px rgba(0, 0, 0, 0.7);
+  }
+}
+@-webkit-keyframes shadowSize {
+  0% {
+    width: 80px;
+    margin-left: 0px;
+    opacity: 1;
+    box-shadow: 90px 0 10px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    width: 50px;
+    margin-left: 20px;
+    opacity: 0.3;
+    box-shadow: 90px 0 30px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    width: 80px;
+    margin-left: 0px;
+    opacity: 1;
+    box-shadow: 90px 0 10px rgba(0, 0, 0, 0.7);
+  }
+}
+/* line 213, ../scss/button.scss */
 html body .content .button_grid #button4 button {
   position: relative;
   font-family: 'Maven Pro';
@@ -236,39 +276,52 @@ html body .content .button_grid #button4 button {
   position: relative;
   border: none;
 }
-/* line 217, ../scss/button.scss */
+/* line 221, ../scss/button.scss */
 html body .content .button_grid #button4 button:hover {
   border: none;
-  animation-name: flaotingButton;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  -moz-animation: flaotingButton 1.5s infinite ease-in-out;
+  -webkit-animation: flaotingButton 1.5s infinite ease-in-out;
 }
-/* line 225, ../scss/button.scss */
+/* line 226, ../scss/button.scss */
 html body .content .button_grid #button4 button:active {
   border: none;
 }
-/* line 324, ../scss/button.scss */
+/* line 230, ../scss/button.scss */
+html body .content .button_grid #button4 button + div {
+  background: inherit;
+  width: 0%;
+  height: .5em;
+}
+/* line 235, ../scss/button.scss */
+html body .content .button_grid #button4 button:hover + div {
+  background: inherit;
+  width: 0%;
+  height: 0.5em;
+  -moz-animation: shadowSize 1.5s infinite ease-in-out;
+  -webkit-animation: shadowSize 1.5s infinite ease-in-out;
+}
+/* line 338, ../scss/button.scss */
 html body .content .button_grid #button11 button {
   position: relative;
   font-family: 'Maven Pro';
   background-color: cadetblue;
   border: none;
 }
-/* line 332, ../scss/button.scss */
+/* line 346, ../scss/button.scss */
 html body .content .button_grid #button11 button:hover {
   border: none;
   -webkit-box-shadow: inset 0px 0px 10px 1px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: inset 0px 0px 10px 1px rgba(50, 50, 50, 0.75);
   box-shadow: inset 0px 0px 5px 1px rgba(50, 50, 50, 0.75);
 }
-/* line 340, ../scss/button.scss */
+/* line 354, ../scss/button.scss */
 html body .content .button_grid #button11 button:active {
   border: none;
   -webkit-box-shadow: inset 0px 0px 10px 3px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: inset 0px 0px 10px 3px rgba(50, 50, 50, 0.75);
   box-shadow: inset 0px 0px 10px 3px rgba(50, 50, 50, 0.75);
 }
-/* line 351, ../scss/button.scss */
+/* line 365, ../scss/button.scss */
 html body .content .button_grid #button12 button {
   position: relative;
   font-family: 'Maven Pro';
@@ -277,82 +330,82 @@ html body .content .button_grid #button12 button {
   transition-property: background-color;
   transition-duration: .5s;
 }
-/* line 359, ../scss/button.scss */
+/* line 373, ../scss/button.scss */
 html body .content .button_grid #button12 button:hover {
   background-color: inherit;
   border-color: black;
 }
-/* line 364, ../scss/button.scss */
+/* line 378, ../scss/button.scss */
 html body .content .button_grid #button12 button:active {
   border-color: black;
   color: white;
 }
 @media (min-width: 480px) {
-  /* line 391, ../scss/button.scss */
+  /* line 405, ../scss/button.scss */
   html body {
     width: 480px;
   }
-  /* line 392, ../scss/button.scss */
+  /* line 406, ../scss/button.scss */
   html .m_width50 {
     width: 50%;
   }
 }
 @media (min-width: 768px) {
-  /* line 398, ../scss/button.scss */
+  /* line 412, ../scss/button.scss */
   html body {
     width: 768px;
   }
-  /* line 399, ../scss/button.scss */
+  /* line 413, ../scss/button.scss */
   html .t_width100 {
     width: 100%;
   }
-  /* line 400, ../scss/button.scss */
+  /* line 414, ../scss/button.scss */
   html .t_width50 {
     width: 50%;
   }
-  /* line 401, ../scss/button.scss */
+  /* line 415, ../scss/button.scss */
   html .t_width75 {
     width: 75%;
   }
-  /* line 402, ../scss/button.scss */
+  /* line 416, ../scss/button.scss */
   html .t_width66 {
     width: 66%;
   }
-  /* line 403, ../scss/button.scss */
+  /* line 417, ../scss/button.scss */
   html .t_width25 {
     width: 25%;
   }
-  /* line 404, ../scss/button.scss */
+  /* line 418, ../scss/button.scss */
   html .t_width33 {
     width: 33%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 409, ../scss/button.scss */
+  /* line 423, ../scss/button.scss */
   html body {
     width: 1024px;
   }
-  /* line 410, ../scss/button.scss */
+  /* line 424, ../scss/button.scss */
   html .width100 {
     width: 100%;
   }
-  /* line 411, ../scss/button.scss */
+  /* line 425, ../scss/button.scss */
   html .width50 {
     width: 50%;
   }
-  /* line 412, ../scss/button.scss */
+  /* line 426, ../scss/button.scss */
   html .width75 {
     width: 75%;
   }
-  /* line 413, ../scss/button.scss */
+  /* line 427, ../scss/button.scss */
   html .width66 {
     width: 66%;
   }
-  /* line 414, ../scss/button.scss */
+  /* line 428, ../scss/button.scss */
   html .width25 {
     width: 25%;
   }
-  /* line 415, ../scss/button.scss */
+  /* line 429, ../scss/button.scss */
   html .width33 {
     width: 33%;
   }
