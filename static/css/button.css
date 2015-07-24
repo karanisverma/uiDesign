@@ -1,142 +1,154 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Maven+Pro);
 /* Centering of the page */
 /* line 4, ../scss/button.scss */
-body {
+html {
+  background-color: crimson;
+  /*Grid Layout for different divices*/
+  /* Desktop version:
+     we set the body width to 768px. */
+  /* Large Desktop version:
+     we set the body width to 1024px. */
+}
+/* line 7, ../scss/button.scss */
+html body {
   margin-left: auto;
   margin-right: auto;
-}
-/* line 10, ../scss/button.scss */
-body .content #featureButton {
-  margin: 5% 0%;
+  font-family: Raleway;
 }
 /* line 12, ../scss/button.scss */
-body .content #featureButton button {
-  position: relative;
-  font-size: 1em;
-  padding: 1% 20%;
-  left: 30%;
-  background-color: cadetblue;
-  -webkit-box-shadow: 0px 5px 0px 0px #323232;
-  -moz-box-shadow: 0px 5px 0px 0px #323232;
-  box-shadow: 0px 5px 0px 0px #323232;
+html body .main p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 2em;
+}
+/* line 20, ../scss/button.scss */
+html body .content #featureButton {
+  margin: 5% 0%;
 }
 /* line 22, ../scss/button.scss */
-body .content #featureButton button:hover {
-  top: -1px;
-  -webkit-box-shadow: 0px 6px 0px 0px #323232;
-  -moz-box-shadow: 0px 6px 0px 0px #323232;
-  box-shadow: 0px 6px 0px 0px #323232;
-}
-/* line 28, ../scss/button.scss */
-body .content #featureButton button:active {
-  top: 4px;
-  -webkit-box-shadow: 0px 2px 0px 0px #323232;
-  -moz-box-shadow: 0px 2px 0px 0px #323232;
-  box-shadow: 0px 2px 0px 0px #323232;
-}
-/* line 34, ../scss/button.scss */
-body .content #featureButton button:focus {
-  outline: 0;
-}
-/* line 37, ../scss/button.scss */
-body .content .button_grid {
+html body .content #featureButton button {
   position: relative;
+  font-size: 1em;
+  font-family: 'Maven Pro';
+  padding: 1% 20%;
+  font-size: 2em;
+  border-radius: 1em;
+  margin-left: 30%;
+  background-color: cadetblue;
+  -webkit-box-shadow: 0px 5px 0px 0px #508082;
+  -moz-box-shadow: 0px 5px 0px 0px #508082;
+  box-shadow: 0px 5px 0px 0px #508082;
+  border: none;
+  color: black;
+  transition-property: color;
+  transition-duration: .5s;
 }
 /* line 39, ../scss/button.scss */
-body .content .button_grid .block {
+html body .content #featureButton button:hover {
+  top: -1px;
+  -webkit-box-shadow: 0px 6px 0px 0px #508082;
+  -moz-box-shadow: 0px 6px 0px 0px #508082;
+  box-shadow: 0px 6px 0px 0px #508082;
+  border: none;
+  color: white;
+  transition-property: color top;
+  transition-duration: .2s;
+}
+/* line 49, ../scss/button.scss */
+html body .content #featureButton button:active {
+  top: 3px;
+  -webkit-box-shadow: 0px 3px 0px 0px #508082;
+  -moz-box-shadow: 0px 3px 0px 0px #508082;
+  box-shadow: 0px 3px 0px 0px #508082;
+  border: none;
+}
+/* line 56, ../scss/button.scss */
+html body .content #featureButton button:focus {
+  outline: 0;
+}
+/* line 59, ../scss/button.scss */
+html body .content .button_grid {
+  position: relative;
+}
+/* line 61, ../scss/button.scss */
+html body .content .button_grid .block {
   padding: 1em 0em;
 }
-/* line 41, ../scss/button.scss */
-body .content .button_grid .block button {
+/* line 63, ../scss/button.scss */
+html body .content .button_grid .block button {
   position: relative;
   left: 30%;
+  font-family: 'Maven Pro';
   padding: 10% 10%;
 }
-
-/*Grid Layout for different divices*/
 @media (min-width: 480px) {
-  /* line 54, ../scss/button.scss */
-  body {
+  /* line 77, ../scss/button.scss */
+  html body {
     width: 480px;
   }
-
-  /* line 55, ../scss/button.scss */
-  .m_width50 {
+  /* line 78, ../scss/button.scss */
+  html .m_width50 {
     width: 50%;
   }
 }
-/* Desktop version:
-   we set the body width to 768px. */
 @media (min-width: 768px) {
-  /* line 61, ../scss/button.scss */
-  body {
+  /* line 84, ../scss/button.scss */
+  html body {
     width: 768px;
   }
-
-  /* line 62, ../scss/button.scss */
-  .t_width100 {
+  /* line 85, ../scss/button.scss */
+  html .t_width100 {
     width: 100%;
   }
-
-  /* line 63, ../scss/button.scss */
-  .t_width50 {
+  /* line 86, ../scss/button.scss */
+  html .t_width50 {
     width: 50%;
   }
-
-  /* line 64, ../scss/button.scss */
-  .t_width75 {
+  /* line 87, ../scss/button.scss */
+  html .t_width75 {
     width: 75%;
   }
-
-  /* line 65, ../scss/button.scss */
-  .t_width66 {
+  /* line 88, ../scss/button.scss */
+  html .t_width66 {
     width: 66%;
   }
-
-  /* line 66, ../scss/button.scss */
-  .t_width25 {
+  /* line 89, ../scss/button.scss */
+  html .t_width25 {
     width: 25%;
   }
-
-  /* line 67, ../scss/button.scss */
-  .t_width33 {
+  /* line 90, ../scss/button.scss */
+  html .t_width33 {
     width: 33%;
   }
 }
-/* Large Desktop version:
-   we set the body width to 1024px. */
 @media (min-width: 1024px) {
-  /* line 72, ../scss/button.scss */
-  body {
+  /* line 95, ../scss/button.scss */
+  html body {
     width: 1024px;
   }
-
-  /* line 73, ../scss/button.scss */
-  .width100 {
+  /* line 96, ../scss/button.scss */
+  html .width100 {
     width: 100%;
   }
-
-  /* line 74, ../scss/button.scss */
-  .width50 {
+  /* line 97, ../scss/button.scss */
+  html .width50 {
     width: 50%;
   }
-
-  /* line 75, ../scss/button.scss */
-  .width75 {
+  /* line 98, ../scss/button.scss */
+  html .width75 {
     width: 75%;
   }
-
-  /* line 76, ../scss/button.scss */
-  .width66 {
+  /* line 99, ../scss/button.scss */
+  html .width66 {
     width: 66%;
   }
-
-  /* line 77, ../scss/button.scss */
-  .width25 {
+  /* line 100, ../scss/button.scss */
+  html .width25 {
     width: 25%;
   }
-
-  /* line 78, ../scss/button.scss */
-  .width33 {
+  /* line 101, ../scss/button.scss */
+  html .width33 {
     width: 33%;
   }
 }

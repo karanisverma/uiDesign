@@ -1,35 +1,57 @@
-
+@import url(http://fonts.googleapis.com/css?family=Raleway|Maven+Pro);
 
       /* Centering of the page */
+  html{
+        background-color: crimson;
+      
   body {
     margin-left: auto;
     margin-right: auto;
-  
-  .content{ 
-
+    font-family: Raleway;
+    .main{
+        p{
+          margin: 0 auto;
+          text-align: center;
+          font-size: 3em;
+          margin-top: 2em;
+        }  
+      }
+    .content{ 
     #featureButton {
       margin: 5% 0%;
       button{
         position: relative;
         font-size: 1em;
+        font-family: 'Maven Pro';
         padding: 1% 20%;
-        left: 30%;
+        font-size: 2em;
+        border-radius: 1em;
+        margin-left:30%;
         background-color: cadetblue;
-        -webkit-box-shadow: 0px 5px 0px 0px rgba(50, 50, 50, 1);
-        -moz-box-shadow:    0px 5px 0px 0px rgba(50, 50, 50, 1);
-        box-shadow:         0px 5px 0px 0px rgba(50, 50, 50, 1);
+        -webkit-box-shadow: 0px 5px 0px 0px rgb(80, 128, 130);
+        -moz-box-shadow:    0px 5px 0px 0px rgb(80, 128, 130);
+        box-shadow:         0px 5px 0px 0px rgb(80, 128, 130);
+        border: none;
+        color: black;
+        transition-property: color;
+        transition-duration: .5s;
       }
       button:hover{
         top:-1px;
-        -webkit-box-shadow: 0px 6px 0px 0px rgba(50, 50, 50, 1);
-        -moz-box-shadow:    0px 6px 0px 0px rgba(50, 50, 50, 1);
-        box-shadow:         0px 6px 0px 0px rgba(50, 50, 50, 1);
+        -webkit-box-shadow: 0px 6px 0px 0px rgb(80, 128, 130);
+        -moz-box-shadow:    0px 6px 0px 0px rgb(80, 128, 130);
+        box-shadow:         0px 6px 0px 0px rgb(80, 128, 130);
+        border: none;
+        color: white;
+        transition-property: color top;
+        transition-duration: .2s;
       }
       button:active{
-        top:4px;
-        -webkit-box-shadow: 0px 2px 0px 0px rgba(50, 50, 50, 1);
-        -moz-box-shadow:    0px 2px 0px 0px rgba(50, 50, 50, 1);
-        box-shadow:         0px 2px 0px 0px rgba(50, 50, 50, 1);
+        top:3px;
+        -webkit-box-shadow: 0px 3px 0px 0px rgb(80, 128, 130);
+        -moz-box-shadow:    0px 3px 0px 0px rgb(80, 128, 130);
+        box-shadow:         0px 3px 0px 0px rgb(80, 128, 130);
+        border: none;
       }
       button:focus {outline:0;}
     }
@@ -41,6 +63,7 @@
           button{
             position: relative;
             left:30%;
+            font-family: 'Maven Pro';
             padding:10% 10%;
           }
         }
@@ -78,3 +101,4 @@
       .width33{ width: 33%; }
   		}
 
+}
